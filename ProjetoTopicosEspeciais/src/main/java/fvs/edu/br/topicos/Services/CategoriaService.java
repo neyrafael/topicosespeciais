@@ -1,4 +1,4 @@
-package fvs.edu.br.topicos.Services;
+package fvs.edu.br.topicos.services;
 
 import java.util.Optional;
 
@@ -9,9 +9,8 @@ import fvs.edu.br.topicos.domain.Categoria;
 import fvs.edu.br.topicos.repositories.CategoriaRepository;
 
 @Service
-
 public class CategoriaService {
-
+	
 	@Autowired
 	private CategoriaRepository repositorio;
 	
@@ -20,5 +19,5 @@ public class CategoriaService {
 		
 		return obj.orElse(null);
 	}
-		
+
 }
