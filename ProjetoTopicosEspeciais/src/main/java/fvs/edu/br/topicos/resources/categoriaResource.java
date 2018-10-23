@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import fvs.edu.br.topicos.Services.CategoriaService;
 import fvs.edu.br.topicos.domain.Categoria;
-import fvs.edu.br.topicos.services.CategoriaService;
 
 @RestController
 @RequestMapping(value="/categorias")
