@@ -12,7 +12,7 @@ import fvs.edu.br.topicos.domain.Categoria;
 
 @RestController
 @RequestMapping(value="/categorias")
-public class categoriaResource {
+public class CategoriaResource {
 
 	@Autowired
 	private CategoriaService service;

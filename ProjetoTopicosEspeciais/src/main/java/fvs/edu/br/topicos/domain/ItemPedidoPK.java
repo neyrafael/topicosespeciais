@@ -3,15 +3,14 @@ package fvs.edu.br.topicos.domain;
 import java.io.Serializable;
 
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 public class ItemPedidoPK implements Serializable{
 	private static final long serialVersionUID = 1L;
-
+	
 	@ManyToOne
 	private Pedido pedido;
 	
-	@OneToMany
+	@ManyToOne
 	private Produto produto;
 
 	public Pedido getPedido() {
@@ -29,8 +28,5 @@ public class ItemPedidoPK implements Serializable{
 	public void setProduto(Produto produto) {
 		this.produto = produto;
 	}
-	
-	
-	
-}
 
+}
